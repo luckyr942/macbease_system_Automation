@@ -21,6 +21,4 @@ out/
 *.log
 npm-debug.log*
 
-# Screenshots (optional local artifacts)
-*.png
-*.webp
+
