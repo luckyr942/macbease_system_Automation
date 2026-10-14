@@ -1,23 +1,19 @@
 'use client';
-
 interface ActivityItem {
     icon: string;
     text: string;
     time: string;
     type: 'success' | 'info' | 'warning' | 'error';
 }
-
 interface ActivityFeedProps {
     items: ActivityItem[];
 }
-
 const typeColors = {
     success: 'var(--mb-success)',
     info: 'var(--mb-info)',
     warning: 'var(--mb-warning)',
     error: 'var(--mb-error)',
 };
-
 export default function ActivityFeed({ items }: ActivityFeedProps) {
     return (
         <div className="card" style={{ padding: '20px 22px' }}>
